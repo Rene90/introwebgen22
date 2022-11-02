@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.p-estatico{
+    display: inline-block;
+    position: static;
+    border:3px solid red ;
+    border-bottom: 10px solid red;
+}
+
+.p-relativa{
+    display: inline-block;
+    position: relative;
+    border:3px solid green ;
+    border-bottom: 10px solid green;
+    top: 150px;
+    left: 70px;
+}
+.p-fija{
+    position: fixed;
+    top: 600px;
+    display: inline-block;
+    border: 3px solid purple;
+}
+.relativo{
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    top: 400px;
+    left: 400px;
+    width: 800px;
+    height:300px;
+}
+.absoluto{
+    bottom: 0px;
+    position: absolute;
+    display: inline-block;
+    border: 1px solid yellow;
+}
+.pegajoso{
+    position: sticky;
+    top:0;
+    display: inline-block;
+    border: 3px solid green;
+}
+p {
+    padding-bottom: 3000px;
+  }

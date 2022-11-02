@@ -1,0 +1,25 @@
+/*Seleccionar etiqueta html*/
+div{
+    margin-top: 20px;
+}
+/*Seleccionamos todos elementos con alguna clase atraves del .*/
+.caja{
+    width: 100px;
+    height: 100px;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: aqua;
+    font-size: 20px;
+}
+.izquierda{
+   float: left; 
+   background-color: red;
+}
+.derecha{
+    float:right;
+    background-color: blue;
+}
+.parrafo{
+    clear: both;
+    width: 200px;
+}
