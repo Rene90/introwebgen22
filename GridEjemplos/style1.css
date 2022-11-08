@@ -1,0 +1,50 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "head head head head"
+    "lateral main main main"
+    "lateral main main main"
+    "lateral main main main"
+    "lateral main main main"
+    "footer footer footer footer" ;
+}
+.encabezado{
+    grid-area: head;
+}
+.carruselFotos{
+    width: 100%;
+    height: 50%;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/dacx/AdForge/Twitch-HomepageH-3fa90222-f512-4b08-80f7-69f95650f3a6._CBnull_.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+
+.piePagina{
+    grid-area: footer;
+    background-color: #772ce8;
+}
+.principal{
+    grid-area: main;
+}
+.menuLateral{
+    grid-area: lateral;
+    background-color: #efeff1;
+}
+.contenedorCartas{
+    display: flex;
+    flex-direction: row;
+}
+.carta{
+    width: 30%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: solid black 1px;
+    height:20rem;
+    border-radius: 5%;
+}
