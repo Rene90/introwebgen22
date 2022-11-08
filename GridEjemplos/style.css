@@ -1,5 +1,33 @@
 .container{
     display: grid;
+    /*grid-template-columns: 33% 33% 33%;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*grid-template-rows: 100px 50px 200px;*/
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));/*De esta manera podemos hacerlo responsivo al tamanio de pantalla*/
+ 
+
+}
+.container2{
+    display: grid; /*defino rejilla*/
+    height: 100vh;/*display del 100 por ciento de la pantalla*/
+    grid-template-columns: repeat(3, 1fr);/*equivalente a grid-template-columns: 33% 33% 33%;*/
+    grid-gap: 20px;
+    grid-template-areas: 
+    "lado main main"
+    "footer footer footer";
+
+}
+.caja11{
+    grid-area: lado;
+    background-color: rgb(55, 81, 212);
+}
+.caja22{
+    grid-area: main;
+    background-color: rgb(165, 42, 142);
+}
+.caja33{
+    grid-area: footer;
+    background-color: rgb(122, 207, 38);
 }
 .caja{
     text-align: center;
@@ -8,6 +36,10 @@
 }
 .caja1{
     background-color: brown;
+    /*grid-row: 2 / span 2;*/
+    /*esto es equivalente a que nosotros pongamos  grid-row-start:2  grid-row-end: 3   */
+    /*grid-column: span 2;*/
+    /* grid-column-start:2 grid-column-end:3*/
 }
 .caja2{
     background-color: rgb(165, 42, 142);
@@ -33,4 +65,5 @@
 }
 .caja9{
     background-color: rgb(155, 5, 120);
+    
 }
